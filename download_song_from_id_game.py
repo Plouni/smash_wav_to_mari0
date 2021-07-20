@@ -59,7 +59,7 @@ def main():
         except Exception as e:
             print("ID:", song_id, "Name:", song_name, "Error:", e)
             
-    input("Process complete! .pcm available in folder '{}'. Press enter to finish.\n".format(output_path + folder_end))
+    input("Process complete! .ogg available in folder '{}'. Press enter to finish.\n".format(output_path))
     
 if __name__ == "__main__":
     main()

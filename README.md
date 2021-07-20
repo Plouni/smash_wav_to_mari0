@@ -1,8 +1,9 @@
 # smash_wav_to_mari0
 
 Generate ogg files that you can use in Mari0 AE, by downloading songs found in smashcustommusic.net  
-Why this website? I don't work for them but it has looping points for almost every song! And with Python it's easy to download the song, retrieve the looping points and split it in two files (regular .ogg and -intro.ogg file) that you can use in Mari0 AE! 
-Songs are also normalized (so they are not too loud) and compressed (to save space).
+  
+Why this website? I don't work for them but it has looping points for almost every song! And with Python it's easy to download the song, retrieve the looping points and split it in two files (regular .ogg and -intro.ogg file) that you can use in Mari0 AE!  
+With my code, songs are also normalized (so they are not too loud) and compressed (to save space).
 
 
 ## Requirements
@@ -27,7 +28,7 @@ You'll also need to have ffmpeg installed on your PC (and, if using windows, you
 |_ `config.json`  
 |_ `download_from_id_song.py`  
 |_ `download_song_from_id_game.py`  
-|_ `generate_pcm_from_wav.py` 
+|_ `generate_pcm_from_wav.py`  
 |_ `generate_tracks_file.py`  
 |_ `Readme.md`  
 
@@ -63,13 +64,13 @@ But by doing this, you have to enter the parameters in the right order. Here is 
 * `download_from_id_song.py`: song id, name of output song (optional)
 * `download_song_from_id_game.py`: game id
 * `generate_ogg_from_wav.py`: start looping point (enter a number, json if using a json file or enter nothing if not needed).
-* `generate_tracks_file.py`: path of the folder where the music you wan to convert are stored
+* `generate_tracks_file.py`: path of the folder where the music you want to convert are stored
 
 ### Using your own looping points
 If the song you want to loop is not on the smashcustommusic.net website, or if you want to use your own looping point, here are the steps you'll have to follow:  
 1. move the songs you want to convert to the `temp` folder. These should be wav files already trimmed at the end of the loop point
-2. run `generate_tracks_file.py` and you should select the `temp` folder. This will generate a json file at the rootof the project
-3. move the json file genrated in step 2 to the `temp` folder
+2. run `generate_tracks_file.py` and you should select the `temp` folder. This will generate a json file at the root of the project
+3. move the json file generated in step 2 to the `temp` folder
 4. edit the json file and set the start loop points you want to use
 5. run `generate_ogg_from_wav.py` and choose `json` as the start loop point
 
