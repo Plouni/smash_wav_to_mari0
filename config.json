@@ -1,0 +1,9 @@
+{
+    "output_path":"output/",
+    "out_sample_rate":22050,
+    "tracks_file":"tracks.json",
+    "stop_words": ["remix", "arrangement", "backwards", "acapella", "remaster"],
+    "temp_folder":"temp/",
+    "tools_folder":"tools/",
+    "download_only":false
+}
