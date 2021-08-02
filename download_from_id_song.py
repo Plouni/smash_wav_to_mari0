@@ -16,14 +16,14 @@ socket.setdefaulttimeout(120)
 with open('config.json') as f:
     config = json.load(f)
 
-# Loading parent output folder where .pcm will be stored
+# Loading parent output folder where .ogg will be stored
 output_path = config['output_path']
 
-# Loading tools folder where msupcm.exe and wav2msu.exe are stored
+# Loading tools folder
 tools_folder = config['tools_folder']
 
 current_path = os.getcwd().replace('\\', '/') + '/'
-# Loading temp folder where downloaded .pcm will be stored
+# Loading temp folder where downloaded .ogg will be stored
 temp_folder = config['temp_folder']
 
 # If download only, no converting/ normalizing
@@ -116,7 +116,7 @@ def brstm_to_wav(path_in, path_out, remove_brstm=True):
         
 
 def main():
-    print('# This script will download a .brstm file from smashcustommusic.net and convert it to a .pcm file #\n')
+    print('# This script will download a .brstm file from smashcustommusic.net and convert it to a .ogg file #\n')
 
     # If the script was runned directly without parameters
     if len(sys.argv) < 2:

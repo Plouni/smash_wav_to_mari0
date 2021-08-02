@@ -13,7 +13,7 @@ with open('config.json') as f:
 # Loading "stop words" list. Songs that contain any of the "stop words" (remix, etc...) won't be downloaded
 stop_words = config['stop_words']
 
-# Loading output path where .pcm will be stored
+# Loading output path where .ogg will be stored
 output_path = config['output_path']
 
 
